@@ -3,12 +3,12 @@
 struct Node 
 {
     int data;
-    struct Node next;
+    struct Node* next;
 };
 
 int main() 
 {
-    struct Nodehead;
+    struct Node* head;
     head=malloc(sizeof(struct Node));
     if (head == NULL) {
         printf("無效");
